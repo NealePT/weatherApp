@@ -11,7 +11,7 @@ const Weather = ({weatherData}) => {
     <div className='main'>
       <div className='top'>
         <p className='header'>{weatherData.name}</p>
-        <aside className='button' onClick={refresh}><i class="fa-solid fa-arrows-rotate"></i></aside>
+        <div className='button' onClick={refresh}><i class="fa-solid fa-arrows-rotate"></i></div>
       </div>
       <div className='flex'>
         <p className='day'>{moment().format('dddd')}, <span>{moment().format('LL')}</span></p>
@@ -20,7 +20,7 @@ const Weather = ({weatherData}) => {
       <div className='flex'>
         <p className='temp'>Temprature: {weatherData.main.temp} &deg;C</p>
         <p className='temp'>Humidity: {weatherData.main.humidity} %</p>
-      </div>å
+      </div>
       <div className='flex'>
         <p className='sun'>Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
         <p className='sun'>Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
