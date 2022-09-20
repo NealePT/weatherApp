@@ -34,3 +34,18 @@
   display: flex;
   justify-content: space-between;
 }
+
+.sun{
+  padding: 15px;
+  color: whitesmoke;
+  font-family: 'Recursive', sans-serif;
+  font-size: 16px;
+}
+
+.description{
+  padding: 15px;
+  color: whitesmoke;
+  font-family: 'Recursive', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
