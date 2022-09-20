@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
-import Weather from './components/weather';
+import Weather from './components/Weather.js'
 
 export default function App() {  
   const [lat, setLat] = useState([]);
@@ -29,9 +29,8 @@ export default function App() {
       {(typeof data.main != 'undefined') ? (
         <Weather weatherData={data}/>
       ): (
-        <div></div>
+        <div>Loading</div>
       )}
-      
     </div>
   );
 }
